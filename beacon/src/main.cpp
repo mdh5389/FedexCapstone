@@ -42,7 +42,7 @@ void loop()
 
 void handle(String request) {
   if(request == "name") {
-    char* message = " Bay Door 001\0";
+    char* message = "Bay Door 001\0";
     EEBlue.write(message);
     Serial.print(message);
   } else if(request == "uuid") {

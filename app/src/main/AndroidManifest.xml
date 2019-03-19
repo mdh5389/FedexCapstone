@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -33,14 +34,6 @@
         <service
             android:name="com.kontakt.sdk.android.ble.service.ProximityService"
             android:exported="false" />
-        <service
-            android:name=".BackgroundService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".ButtonBubbleService"
-            android:enabled="true"
-            android:exported="true"></service>
     </application>
 
 </manifest>
